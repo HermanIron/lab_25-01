@@ -1,0 +1,44 @@
+.anuncio {
+  position: relative;
+  width: 600px; /* Ajusta el ancho según tus necesidades */
+  height: 600px; /* Ajusta la altura según tus necesidades */
+  background-image: url('img/slogan.jpeg');
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  animation: animacion-logo 3s ease 1s forwards; /* Aplica la animación al logo */
+}
+
+.slogan {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 20px;
+  animation: animacion-slogan 3s ease 2s forwards; /* Aplica la animación al slogan */
+}
+
+.coches {
+  position: absolute;
+  bottom: 0;
+  right: -200px;
+  animation: animacion-coches 5s linear 3s forwards; /* Aplica la animación a los coches */
+}
+
+@keyframes animacion-logo {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes animacion-slogan {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes animacion-coches {
+  from { transform: translateX(0); }
+  to { transform: translateX(500px); }
+}
